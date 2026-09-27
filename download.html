@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Download — Hollow Contract</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a href="index.html">Hollow Contract</a>
+    <a href="play.html">How to play</a>
+    <a href="download.html">Download</a>
+  </header>
+  <main>
+    <p class="kicker">Closed</p>
+    <h1>Download</h1>
+    <p class="lede">Packs are not public. This page stays locked until payment is connected.</p>
+
+    <div class="lock" id="gate">
+      <p>Access is paid. No files are listed here.</p>
+      <p class="mute">Checkout is not wired yet. Nothing will charge you.</p>
+      <button type="button" class="btn" id="pay" disabled>Pay — coming later</button>
+    </div>
+
+    <div class="lock hidden" id="paid">
+      <p>If this ever unlocks, files appear only after a real receipt. They are not stored on this page.</p>
+    </div>
+
+    <footer>Ham_bone375 is already here.</footer>
+  </main>
+  <script>
+    // Intentional: no file URLs in this document.
+    document.getElementById("pay").addEventListener("click", function (e) {
+      e.preventDefault();
+    });
+  </script>
+</body>
+</html>
